@@ -1,0 +1,78 @@
+*lineno.vim*  Easily set line numbering mode
+
+==============================================================================
+CONTENTS                                           *lineno* *lineno-contents*
+
+     INSTALLATION..........................: |lineno-installation|
+     USAGE.................................: |lineno-usage|
+     COMMANDS..............................: |lineno-commands|
+     ABOUT.................................: |lineno-about|
+     LICENSE...............................: |lineno-license|
+
+==============================================================================
+INSTALLATION                                       *lineno-installation*
+
+You can use your favourite installation method. With Tim Pope's pathogen
+(https://github.com/tpope/vim-pathogen) it is simply a question of cloning the
+lineno.vim repository into your vim bundle directory.
+>
+    cd ~/.vim/bundle
+    git clone git://github.com/heindsight/lineno.vim
+<
+
+==============================================================================
+USAGE                                              *lineno-usage*
+
+Use |:SetLineNoMode| to simultaneously set the 'number' and 'relativenumber'
+options. Use |:SwitchLineNoMode| to cycle between different combinations of
+'number' and 'relativenumber'.
+
+==============================================================================
+COMMANDS                                           *lineno-commands*
+
+:SetLineNoMode {mode}                              *:SetLineNoMode:*
+                    Set/unset 'number' and 'relativenumber' depending on the
+                    value of {mode}:
+                            0:   'nonu'  'nornu'
+                            1:   'nu'    'nornu'
+                            2:   'nonu'  'rnu'
+                            3:   'nu'    'rnu'
+
+                    See |number_relativenumber| for an explanation of the
+                    different combinations.
+
+:SwitchLineNoMode                                  *:SwitchLineNoMode*
+                    Cycle between the line numbering modes listed above.
+
+==============================================================================
+ABOUT                                              *lineno-about*
+
+You can always get the latest version on GitHub. Bug reports, suggestions and
+pull requests are welcome!
+
+http://github.com/heindsight/lineno.vim
+
+==============================================================================
+LICENSE                                            *lineno-license*
+
+Copyright (c) 2015 Heinrich Kruger
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+vim:tw=78:et:ft=help:norl:
