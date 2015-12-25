@@ -2,7 +2,7 @@
 " Copyright (c) 2015, Heinrich Kruger (heindsight@gmail.com)
 " Distributed under the MIT license (see ../LICENSE)
 
-if exists('g:loaded_lineno') || &cp
+if exists('g:loaded_lineno')
     finish
 endif
 let g:loaded_lineno=1
