@@ -1,8 +1,8 @@
 # lineno.vim
 
-This very simple vim plugin provides commands to simultaneously set the
-`number` and `relativenumber` vim options and to switch between different
-combinations of `number` and `relativenumber`.
+This very simple plugin provides commands to simultaneously set the `number`
+and `relativenumber` options in vim and to switch between different
+combinations of these options.
 
 ## Installation
 
@@ -26,7 +26,7 @@ determines the line numbering mode:
    `'relativenumber'` both set)
 
 Use `:SwitchLineNoMode` to cycle between the modes listed above.  You may want
-to define a mapping for this command in your `~/.vimrc`:
+to define a mapping for this command in your `~/.vimrc`. Eg:
 
 ```vim
    nmap <silent><F2> :SwitchLineNoMode<CR>
